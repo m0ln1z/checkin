@@ -1,7 +1,9 @@
 import Foundation
 
-struct Session: Identifiable {
-    let id: UUID
-    let groupName: String
-    let startTime: Date
+struct Session: Identifiable, Codable {
+    var id: Int
+    var groupName: String
+    var teacherId: Int
+    var sessionStart: Date
+    var qrCode: String
 }
